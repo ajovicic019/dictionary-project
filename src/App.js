@@ -9,7 +9,7 @@ function App() {
         <img src={logo} alt="SheCodesc logo" className="logo img-fluid" />
       </header>
       <main>
-        <Dictionary />
+        <Dictionary defaultKeyword="Sunset" />
       </main>
       <footer>Coded by Andrea Jovicic</footer>
     </div>
