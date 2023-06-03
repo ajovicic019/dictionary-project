@@ -1,4 +1,5 @@
 import React from "react";
+import "./Photos.css";
 
 export default function Photos(props) {
   if (props.photos) {
@@ -8,10 +9,15 @@ export default function Photos(props) {
           {props.photos.map(function (photo, index) {
             return (
               <div className="col-4" key={index}>
-                <a href={photo.src.original} target="_blank" rel="noreferrer">
+                <a
+                  href={photo.src.original}
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Original photo"
+                >
                   <img
                     src={photo.src.landscape}
-                    alt="photos of a chosen word"
+                    alt={photo.alt}
                     className="img-fluid"
                   />
                 </a>
